@@ -1,0 +1,13 @@
+{
+  "name": "Adwaita Light",
+  "title": "Adwaita Light",
+  "displayName": "Adwaita Light",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "Default Gnome aka. Adwaita Light theme for Mailspring",
+  "license": "MIT",
+  "engines": {
+    "mailspring": "*"
+  }
+}
+
