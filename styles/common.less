@@ -1,0 +1,22 @@
+@import "color-variables";
+
+//------------------------------------------------------------
+// Main window
+//------------------------------------------------------------
+.sheet-container {
+	border-top: 1px solid @colorBorder;	
+}
+
+//------------------------------------------------------------
+// Main toolbar
+//------------------------------------------------------------
+.sheet-toolbar {
+	border: none;
+	height: 45px;
+	min-height: 45px;
+	max-width: 45px;
+}
+
+body.platform-linux .sheet-toolbar-container {
+	background: @colorWindowBg;
+}

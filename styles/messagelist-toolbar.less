@@ -1,0 +1,54 @@
+@import "color-variables";
+
+.toolbar-MessageList,
+.toolbar-MessageListSidebar {
+	height: 100%;
+	background: @colorSidebarBg;
+	border-bottom: 1px solid @colorBorder;
+
+	//---------------------------------
+	// Toolbar buttons
+	//---------------------------------
+	.btn-toolbar {
+		background: -webkit-gradient(linear, left top, left bottom, from(@colorBtnBgLight), to(@colorBtnBgLight2));
+		box-shadow: none;
+		border: 1px solid @colorBtnBorderLight !important;
+		border-radius: 5px !important;
+		height: 32px;
+
+		&:hover {
+			border-color: @colorBtnBorderLight !important;
+			background: @colorBtnDefaultBgHover;
+		}
+
+		&:active,
+		&.mode-toggle.mode-false {
+			border-color: @colorBtnBorderActiveLight !important;
+			background-color: @colorBtnBgActiveLight;
+
+			img.content-mask {
+				background-color: @colorBtnTextActive;
+			}
+		}
+
+		//---------------------------------
+		// Inactive window toolbar buttons
+		//---------------------------------
+		body.is-blurred & {
+			box-shadow: none;
+
+			img.content-mask {
+				opacity: 1.0;
+			}
+
+			&:hover {
+				border-color: @colorBtnBorderLight;
+				background-color: @colorBtnBgLight;
+			}
+		}
+
+		body.is-blurred &.mode-toggle.mode-false {
+			background-color: @colorBtnBgActiveLight;
+		}
+	}
+}

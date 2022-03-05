@@ -1,0 +1,17 @@
+@import "color-variables";
+
+.ignore-in-parent-frame {
+  
+  #inbox-html-wrapper {
+    font-family: 'Helvetica Neue', 'Lucidia Grande', sans-serif;
+  }
+
+  pre.nylas-plaintext {
+    // The default font for <pre> tags is the system monospace font. We want
+    // themes to be able to override with monospace, but not have that be the
+    // default for normal people.
+    font-family: 'DejaVu Sans Mono', 'Helvetica Neue', 'Lucidia Grande', sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}

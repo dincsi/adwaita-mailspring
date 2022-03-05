@@ -1,0 +1,65 @@
+@import "color-variables";
+
+//------------------------------------------------------------
+// Thread list toolbar
+//------------------------------------------------------------
+.toolbar-ThreadList {
+	height: 45px;
+	background: @colorWindowBg;
+	padding-top: 2px !important;
+	border-bottom: 1px solid @colorSidebarBorder;
+}
+
+.thread-search-bar .tokenizing-contenteditable .layer {
+    top: 5px;
+}
+
+//------------------------------------------------------------
+// Search box
+//------------------------------------------------------------
+.thread-search-bar {
+	box-shadow: none;
+	padding-left: 9px;
+	margin: 3px 0px;
+	height: 34px;
+	border: 1px solid @colorBtnBorderLight;
+	border-radius: 6px;
+
+	//---------------------------------
+	// Search box dropdown
+	//---------------------------------
+	.suggestions {
+		.suggestion {
+			color: @colorTextFaded;
+
+			&.selected {
+				background-color: @colorAccent;
+			}
+
+			&:hover:not(.selected) {
+				background-color: @colorListItemHover;
+			}
+
+			.suggestion-token {
+				color: @colorAccent;
+			}
+		}
+
+		.footer {
+			background-color: @colorWindowBg;
+			border-color: @colorBorder;
+		}
+	}
+}
+
+//------------------------------------------------------------
+// Drafts/trash empty button header
+//------------------------------------------------------------
+.thread-list-empty-folder-bar {
+	background-color: @colorWarningBar;
+	border-bottom-color: @colorBorder;
+
+	.notice {
+		color: @colorText;
+	}
+}
