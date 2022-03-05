@@ -1,6 +1,5 @@
 # Adwaita theme for Mailspring
 
-<<<<<<< HEAD
 
 ## Installation
 Clone the repository:
@@ -20,6 +19,3 @@ This theme is based on the [Arc theme by drakkar1969](https://github.com/drakkar
 
 
 
-=======
-This is a Gnome default (Adwaita) light theme for Mailspring.
->>>>>>> parent of 45e8694 (Install steps an Font changes)
