@@ -1,5 +1,5 @@
 # Adwaita theme for Mailspring
-
+![Preview](screenshot/adwaita-mailspring.webp)
 
 ## Installation
 Clone the repository:
